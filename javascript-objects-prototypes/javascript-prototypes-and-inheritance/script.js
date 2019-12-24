@@ -76,5 +76,6 @@ class Cat extends Animal {
 
 var fluffy = new Cat('Fluffy', 'White')
 display(fluffy);
+display(fluffy.constructor);
 display(Object.keys(fluffy.__proto__.__proto__))
 display(fluffy.__proto__.__proto__.hasOwnProperty('speak'))
