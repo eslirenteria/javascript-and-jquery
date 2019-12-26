@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="Scripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="Scripts/test.js"></script>
+</head>
+
+<body>
+    <div id="MyDiv">This is some text</div>
+    <form id="form1" runat="server">
+        <table id="MyTable" style="width:300px;" cellpadding="5">
+            <tr>
+                <td style="width:30%;">First Name</td>
+                <td style="width:70%;"><input id="FirstNameTextBox" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input class="MyInput" id="LastNameTextBox" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td><textarea class="MyInput" rows="5" cols="60" id="CommentsTextBox"></textarea></td>
+            </tr>   
+            <tr>
+                <td>Phone</td>
+                <td>
+                    <input type="button" id="AddPhone" value="Add Phone" />
+                    <div id="PhonesDiv" style="margin-top:10px;">
+                        <div class="PhoneTypeDiv">
+                            <select class="PhoneType">
+                                <option value="">Select One:</option>
+                                <option value="Mobile">Mobile</option>
+                                <option value="Office">Office</option>
+                            </select>
+                        </div>
+                        <div class="PhoneNumberDiv">
+                            <input type="text" class="PhoneNumber" maxlength="12" />
+                        </div>
+                    </div>
+                </td>
+            </tr>        
+            <tr>
+                <td>
+                    State
+                </td>
+                <td>
+                    <select id="StatesSelect" class="MyInput">
+                        <option value="CDMX">CDMX</option>
+                        <option value="NAY" selected="true">NAY</option>
+                    </select>                
+                </td>
+            </tr>
+            <tr>
+                <td><input id="SubmitButton" type="button" value="Submit" /></td>
+                <td>
+                    <div id="DivOutput"></div>
+                </td>
+            </tr>
+        </table>  
+    </form>
+</body>
+</html>
