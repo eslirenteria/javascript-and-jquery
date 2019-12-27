@@ -1,0 +1,25 @@
+﻿body 
+{
+    background-color:#cccc99;
+    font-family: Arial, Sans-Serif;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+}
+
+/* resize images */
+.container img {
+    width: auto;
+    height: auto;
+}
+
+.ui-progressbar{
+    height: 100px;
+    width: 400px;
+} 
+
+.ui-progressbar-value{
+    background-image: url("../img/rainbow.gif");
+}
