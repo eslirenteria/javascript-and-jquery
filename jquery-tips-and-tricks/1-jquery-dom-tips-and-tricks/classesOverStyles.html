@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write("<script src=''scripts/jquery.js><\/script>")
+    </script>
+
+    <style type="text/css">
+        .panel{
+            background-color: #efefef;
+            color: black;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+        .hover{ 
+            background-color: rgb(255, 0, 234);
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div> P1 </div>
+    <div> P2 </div>
+    <div> P3 </div>
+    <div> P4 </div>
+    <div> P5 </div>
+</div>
+<script>
+    var containerDiv = $("#container div");
+    containerDiv.addClass("panel")
+    .hover(function(){
+        $(this).toggleClass("hover");
+    });
+</script>    
+</body>
+</html>
